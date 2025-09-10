@@ -50,7 +50,7 @@ python app.py
 
 
 ## Live Link
-[Live Demo](https://62412de1-d5bd-4658-995c-75966451e0d6-00-14kqg6zejs4kh.worf.replit.dev/)
+[Employees App (Flask + Neon DB) on Replit](https://62412de1-d5bd-4658-995c-75966451e0d6-00-14kqg6zejs4kh.worf.replit.dev/)
 
 
 

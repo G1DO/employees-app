@@ -1,0 +1,5 @@
+{
+  "install": "pip install --upgrade pip && pip install -r requirements.txt",
+  "start": "gunicorn -b 0.0.0.0:$PORT app:app",
+  "watch": { "ignore": [".venv", "venv", "__pycache__", "*.log"] }
+}

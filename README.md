@@ -15,7 +15,7 @@ Database is hosted on **Neon** and the app runs on **Replit**.
 
 ## Tech Used
 - Flask (Python)
-- PostgreSQL (Neon)
+- PostgreSQL (Deploy on Neon)
 - SQLAlchemy
 - HTML + CSS
 - Replit (deployment)

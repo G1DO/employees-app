@@ -38,16 +38,15 @@ pip install -r requirements.txt
 
 Set environment:
 
-export DATABASE_URL='postgresql://neondb_owner:npg_cbIAgfKl0w8t@ep-snowy-darkness-ad3p8k7t-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
+export DATABASE_URL='postgresql://neondb_owner:npg_cbIAgfKl0w8t@ep-snowy-darkness-ad3p8k7t-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'   
+
 export SECRET_KEY="$(python - <<<'import secrets;print(secrets.token_hex(16))')"
 
 
 Start app:
-
 python app.py
 
 
-Open http://127.0.0.1:5000
 
 
 ## Live Link

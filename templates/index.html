@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="header">
+  <h1>Employees</h1>
+  <a class="btn" href="{{ url_for('create') }}">+ Add Employee</a>
+</div>
+<table class="table">
+  <thead><tr><th>ID</th><th>Name</th><th>Title</th><th>Email</th><th>Actions</th></tr></thead>
+  <tbody>
+  {% for e in employees %}
+    <tr>
+      <td>{{ e.id }}</td>
+      <td>{{ e.name }}</td>
+      <td>{{ e.title }}</td>
+      <td>{{ e.email }}</td>
+      <td class="actions">
+        <a class="btn small" href="{{ url_for('edit', emp_id=e.id) }}">Edit</a>
+        <form method="post" action="{{ url_for('delete', emp_id=e.id) }}" onsubmit="return confirm('Delete?')" style="display:inline">
+          <button class="btn danger small" type="submit">Delete</button>
+        </form>
+      </td>
+    </tr>
+  {% else %}
+    <tr><td colspan="5" class="empty">No employees yet.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ action }} Employee</h1>
+<form method="post" class="form">
+  <label>Name<input name="name" value="{{ employee.name if employee else '' }}" required></label>
+  <label>Title<input name="title" value="{{ employee.title if employee else '' }}" required></label>
+  <label>Email<input name="email" type="email" value="{{ employee.email if employee else '' }}" required></label>
+  <div class="form-actions">
+    <button class="btn" type="submit">{{ action }}</button>
+    <a class="btn secondary" href="{{ url_for('index') }}">Cancel</a>
+  </div>
+</form>
+{% endblock %}
